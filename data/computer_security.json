@@ -1,0 +1,252 @@
+[
+    {
+        "question": "Assume that a TLS connection has been established successfully between a client and a server. Establishing the session included checking the server certificate and executing a DiffieHelmann exchange, but the client did not provide a client certificate. Further, assume that the client and server are honest, that the client and server don\u2019t leak their keys, and that the cryptography is good. Which of the following attacks does TLS protect against?\n1. An attacker replaying bytes that a client sent earlier.\n2. An attacker impersonating the server.",
+        "expected_answer": "True, True",
+        "response": null
+    },
+    {
+        "question": "MIT\u2019s Kerberos KDC server has a maximum ticket lifetime of 24 hours (for most user principals). What ensures that an expired Kerberos ticket can no longer be used?",
+        "expected_answer": "When a client connects to a server, the server compares the ticket\u2019s expiration time to the server\u2019s current clock, and refuses to authenticate the user if the ticket expiration time is in the past.",
+        "response": null
+    },
+    {
+        "question": "In Message Condentiality, the transmitted message must make sense to only intended",
+        "expected_answer": "Receiver",
+        "response": null
+    },
+    {
+        "question": "Which of the following is a remote Trojan?",
+        "expected_answer": "Troya",
+        "response": null
+    },
+    {
+        "question": "______________ is a widespread app\u2019s coding mistake made by developers which could be exploited by an attacker for gaining access or malfunctioning your system.",
+        "expected_answer": "Buffer-overrun",
+        "response": null
+    },
+    {
+        "question": "Consider the paper Native Client: A Sandbox for Portable, Untrusted x86 Native Code by Yee et al. Ben Bitdiddle notes that NaCl uses Intel x86 segmentation to ensure that the sandboxed module does not read or write memory outside its own data area, and does not execute instructions outside its own code. Ben thinks that with these restrictions alone, executing the sandboxed module must be safe; that is, he thinks validation is not needed. Ben is wrong. Circle the types of x86 machine instructions that the validator always forbids in sandboxed code. Please ignore trampoline and springboard code.",
+        "expected_answer": "all instructions that modify segment state",
+        "response": null
+    },
+    {
+        "question": "____________ is also a part of darknet that is employed for transferring files anonymously.",
+        "expected_answer": "Freenet",
+        "response": null
+    },
+    {
+        "question": "Why apps developed in languages like C, C++ is prone to Buffer-overflow?",
+        "expected_answer": "No string boundary checks in predefined functions",
+        "response": null
+    },
+    {
+        "question": "Man in the middle attack can endanger the security of Diffie Hellman method if two parties are not",
+        "expected_answer": "Authenticated",
+        "response": null
+    },
+    {
+        "question": "An integer overflow occurs when",
+        "expected_answer": "there is no more space to hold integers in the program",
+        "response": null
+    },
+    {
+        "question": "Let HH be a Merkle-Damgard hash function is H:X^{\\leq L} \\to TH:X^\u2264L  \u2192T. Construct a MAC from this HH as follows: \\ \\ S(k,m) = H(k \\| m)  S(k,m)=H(k\u2225m). This mac is insecure because:",
+        "expected_answer": "Given H(k \\| m)H(k\u2225m) anyone can compute H(k \\| m \\| \\text{PB} \\| w)H(k\u2225m\u2225PB\u2225w) for any ww",
+        "response": null
+    },
+    {
+        "question": "Suppose that Alice and Bob sent confidential text messages to one another last month through an encrypted messaging system. Alice and Bob are worried that an adversary might compromise one of their computers today, while they are taking the 6.858 final exam, and would then be able to decrypt those messages. Which of the following security properties can address Alice and Bob\u2019s concern?",
+        "expected_answer": "Forward secrecy",
+        "response": null
+    },
+    {
+        "question": "The AH Protocol provides source authentication and data integrity, but not",
+        "expected_answer": "Privacy",
+        "response": null
+    },
+    {
+        "question": "Which of the following is not a security exploit?",
+        "expected_answer": "Authentication",
+        "response": null
+    },
+    {
+        "question": "_______________ is the central node of 802.11 wireless operations.",
+        "expected_answer": "Access Point",
+        "response": null
+    },
+    {
+        "question": "In MD-5 the length of the message digest is",
+        "expected_answer": "128",
+        "response": null
+    },
+    {
+        "question": "What is Nmap?",
+        "expected_answer": "It is a scanner which works by injecting packets to a range of addresses, and inferring what hosts and services might be at those addresses, based on the responses",
+        "response": null
+    },
+    {
+        "question": "How do you prevent SQL injection?",
+        "expected_answer": "Escape queries",
+        "response": null
+    },
+    {
+        "question": "What does it mean to \"be stealthy\" during a penetration test?",
+        "expected_answer": "Taking care to avoid activities during a penetration test that might attract attention, e.g., by operators or IDS services",
+        "response": null
+    },
+    {
+        "question": "Which of the following is not a transport layer vulnerability?",
+        "expected_answer": "Unauthorized network access",
+        "response": null
+    },
+    {
+        "question": "In Brumley and Boneh\u2019s paper on side-channel attacks, why does blinding prevent the timing attack from working?",
+        "expected_answer": "Blinding randomizes the ciphertext being decrypted, thus obscuring the correlation between an adversary\u2019s input and the timing differences.",
+        "response": null
+    },
+    {
+        "question": "The openSSL implementation described in \u201cRemote Timing Attacks are Practical\u201d (by Brumley and Boneh) uses the following performance optimizations: Chinese Remainder (CR), Montgomery Representation (MR), Karatsuba Multiplication (KM), and Repeated squaring and Sliding windows (RS). Which of the following options would close the timing channel attack described in the paper if you turned the listed optimizations off?\n1. RS and KM\n2. RS and MR",
+        "expected_answer": "False, True",
+        "response": null
+    },
+    {
+        "question": "Public key encryption is advantageous over Symmetric key Cryptography because of",
+        "expected_answer": "Key exchange",
+        "response": null
+    },
+    {
+        "question": "The __________ was a huge marketplace of Dark Web specifically famous for selling of illegal drugs & narcotics as well as you can find a wide range of other goods for sale.",
+        "expected_answer": "Silk Road",
+        "response": null
+    },
+    {
+        "question": "The ______________ is categorized as an unknown segment of the Deep Web which has been purposely kept hidden & is inaccessible using standard web browsers.",
+        "expected_answer": "Dark web",
+        "response": null
+    },
+    {
+        "question": "What does EXE do when the STP solver times out on a constraint query for a particular path?",
+        "expected_answer": "Assume that the query is not satisfiable and stop executing the path",
+        "response": null
+    },
+    {
+        "question": "To verify a digital signature we need the",
+        "expected_answer": "Sender\u2019s Public key",
+        "response": null
+    },
+    {
+        "question": "Suppose you want to use fuzzing on a program to try to find memory errors; which of the following statements is true?",
+        "expected_answer": "Compiling the program with address sanitizer (ASAN) will make the source of a memory error easier to find",
+        "response": null
+    },
+    {
+        "question": "Based on the paper \u201cSoK: SSL and HTTPS: Revisiting past challenges and evaluating certificates trust model enhancements\u201d, which of the following statements are false?",
+        "expected_answer": "Valid DV certificates provide more confidence to a user that she is connecting to the intended party than valid EV certificates.",
+        "response": null
+    },
+    {
+        "question": "What tool can be used to perform SNMP enumeration?",
+        "expected_answer": "IP Network Browser",
+        "response": null
+    },
+    {
+        "question": "Which among them has the strongest wireless security?",
+        "expected_answer": "WPA3",
+        "response": null
+    },
+    {
+        "question": "Suppose Unix did not provide a way of passing file descriptors between processes, but still allowed inheriting file descriptors from a parent on fork and exec. What aspects of the OKWS design would break without file descriptor passing?\n1. It would be impossible for services to get a TCP connection to the client web browser.\n2. It would be impossible for okd to run as a non-root user.",
+        "expected_answer": "True, False",
+        "response": null
+    },
+    {
+        "question": "Failed sessions allow brute-force attacks on access credentials. This type of attacks are done in which layer of the OSI model?",
+        "expected_answer": "Session layer",
+        "response": null
+    },
+    {
+        "question": "Which of the following is an authentication method?",
+        "expected_answer": "All of the above",
+        "response": null
+    },
+    {
+        "question": "When does a buffer overflow occur, generally speaking?",
+        "expected_answer": "when a pointer is used to access memory not allocated to it",
+        "response": null
+    },
+    {
+        "question": "A digital signature needs a",
+        "expected_answer": "Public-key system",
+        "response": null
+    },
+    {
+        "question": "A packet filter firewall filters at the",
+        "expected_answer": "Network or transport layer",
+        "response": null
+    },
+    {
+        "question": "Let I = (S,V)I=(S,V) be a MAC. Suppose S(k,m)S(k,m) is always 5 bits long. Can this MAC be secure?",
+        "expected_answer": "No, an attacker can simply guess the tag for messages",
+        "response": null
+    },
+    {
+        "question": "Which of the following deals with network intrusion detection and real-time traffic analysis?",
+        "expected_answer": "Snort",
+        "response": null
+    },
+    {
+        "question": "The Message condentiality or privacy means that the sender and the receiver expect",
+        "expected_answer": "Condentiality",
+        "response": null
+    },
+    {
+        "question": "When a wireless user authenticates to any AP, both of them go in the course of four-step authentication progression which is called _____________",
+        "expected_answer": "4-way handshake",
+        "response": null
+    },
+    {
+        "question": "Message authentication is a service beyond",
+        "expected_answer": "Message Integrity",
+        "response": null
+    },
+    {
+        "question": "Which of the following are most vulnerable to injection attacks?",
+        "expected_answer": "SQL queries based on user input",
+        "response": null
+    },
+    {
+        "question": "Assume that a TLS connection has been established successfully between a client and a server. Establishing the session included checking the server certificate and executing a DiffieHelmann exchange, but the client did not provide a client certificate. Further, assume that the client and server are honest, that the client and server don\u2019t leak their keys, and that the cryptography is good. Which of the following attacks does TLS protect against?\n1. An attacker replacing bytes sent by a client with bytes of the attacker\u2019s own choosing.\n2. An attacker reading the plaintext bytes sent by a client.",
+        "expected_answer": "True, True",
+        "response": null
+    },
+    {
+        "question": "Which of the following is a Wireless traffic Sniffing tool?",
+        "expected_answer": "Wireshark",
+        "response": null
+    },
+    {
+        "question": "A ___________ is a method in which a computer security mechanism is bypassed untraceable for accessing the computer or its information.",
+        "expected_answer": "backdoor",
+        "response": null
+    },
+    {
+        "question": "Which of the following is not a block cipher operating mode?",
+        "expected_answer": "CBF",
+        "response": null
+    },
+    {
+        "question": "What is a web proxy?",
+        "expected_answer": "A piece of software that intercepts and possibly modifies requests (and responses) between a web browser and web server",
+        "response": null
+    },
+    {
+        "question": "Buffer-overflow may remain as a bug in apps if __________ are not done fully.",
+        "expected_answer": "boundary checks",
+        "response": null
+    },
+    {
+        "question": "Applications developed by programming languages like ____ and ______ have this common buffer-overflow error.",
+        "expected_answer": "C, C++",
+        "response": null
+    }
+]
