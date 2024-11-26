@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT API Tester</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- 引入 Chart.js -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f9; 
+      color: #333; 
+    }
+
+    h1 {
+      color: #1e3d58;
+    }
+
+    label, select, button, textarea, div {
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+
+    .response, .charts {
+      margin-top: 20px;
+    }
+
+    .chart-container {
+      margin-top: 20px;
+    }
+
+    section {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #1e3d58;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #ff7f50;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ChatGPT API Tester</h1>
+    <nav>
+      <ul>
+        <li><a href="#introduction">Project Introduction</a></li>
+        <li><a href="#profile">myself</a></li>
+        <li><a href="#evaluation">ChatGPT Efficient Evaluation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="introduction">
+    <h2>Project</h2>
+    <p>
+      This project combine website development and server set up. The goal is to present an evaluation of ChatGPT's performance in multiple fields (history, social sciences, and computer security) through an interactive website. Through this platform, we will demonstrate ChatGPT's performance in terms of accuracy of answering questions, response time, etc., and provide a reference for further research and improvement.
+    </p>
+  </section>
+
+  <!-- Personal Information -->
+  <section id="profile">
+    <h2>Personal Information</h2>
+    <p><strong>Name：</strong>Haoran Ke</p>
+    <p><strong>Myself：</strong>I am Information Technology student study at York University</p>
+    <p><strong>Background：</strong>In this Project,I used Mangodb to create database. Through Node.js and Express.js to set up server and ChatGPT API to test ChatGPT's response's Accuracy and response time</p>
+  </section>
+
+  <!-- ChatGPT API Test -->
+  <section id="evaluation">
+    <h2>ChatGPT Efficient Evaluation</h2>
+
+    <!-- select domain -->
+    <label for="domain">Select Domain:</label>
+    <select id="domain">
+      <option value="History">History</option>
+      <option value="Social_Science">Social Science</option>
+      <option value="Computer_Security">Computer Security</option>
+    </select>
+
+    <!-- get random questions -->
+    <button id="getQuestion">Get Random Question</button>
+    <div id="questionDisplay">Question will appear here.</div>
+
+    <!-- send questions to ChatGPT -->
+    <button id="sendToChatGPT" style="display:none;">Send to ChatGPT</button>
+
+    <!-- ChatGPT's response -->
+    <div class="response">
+      <h2>ChatGPT Response:</h2>
+      <div id="chatgptResponse">Response will appear here.</div>
+    </div>
+
+    <!-- Visual -->
+    <div class="charts">
+      <h2>Visualization:</h2>
+      <div class="chart-container">
+        <canvas id="accuracyChart" width="400" height="200"></canvas>
+      </div>
+      <div class="chart-container">
+        <canvas id="responseTimeChart" width="400" height="200"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script> 
+</body>
+</html>
